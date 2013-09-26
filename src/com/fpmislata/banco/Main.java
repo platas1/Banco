@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 public class Main {
     
     
-    EntidadBancaria Entidad1 = new EntidadBancaria("Banesto","1","1";"1", TipoEntidadBancaria.Banco);
+    EntidadBancaria EntidadBancaria1 = new EntidadBancaria("Banesto","1","1","1",TipoEntidadBancaria.Banco);
     
 
     
