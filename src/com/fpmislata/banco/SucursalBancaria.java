@@ -1,5 +1,8 @@
 package com.fpmislata.banco;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class SucursalBancaria {
         
@@ -8,13 +11,15 @@ public class SucursalBancaria {
     private EntidadBancaria entidadBancaria;
     private int codigoSucursal;
     private String nombre;
+//Lista ArrayList con las sucursales   
+    private List<SucursalBancaria> sucursales=new ArrayList();
 
     public SucursalBancaria(int idSucursalBancaria, EntidadBancaria entidadBancaria, int codigoSucursal, String nombre) {
         this.idSucursalBancaria = idSucursalBancaria;
         this.entidadBancaria = entidadBancaria;
         this.codigoSucursal = codigoSucursal;
         this.nombre = nombre;
-    }
+   }
 
     /**
      * @return the idSucursalBancaria

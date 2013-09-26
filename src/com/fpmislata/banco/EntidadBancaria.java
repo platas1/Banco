@@ -1,5 +1,8 @@
 package com.fpmislata.banco;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EntidadBancaria {
     
 //Propiedades siempre privadas
@@ -8,6 +11,9 @@ public class EntidadBancaria {
     private int codigo;
     private int cif;
     private TipoEntidadBancaria tipoEntidadBancaria;
+ //lista de entidades bancarias
+    private List<EntidadBancaria> entidades=new ArrayList();
+    
 
     
 //Constructor
