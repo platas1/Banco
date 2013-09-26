@@ -76,6 +76,20 @@ public class SucursalBancaria {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    /**
+     * @return the sucursales
+     */
+    public List<SucursalBancaria> getSucursales() {
+        return sucursales;
+    }
+
+    /**
+     * @param sucursales the sucursales to set
+     */
+    public void setSucursales(List<SucursalBancaria> sucursales) {
+        this.sucursales = sucursales;
+    }
     
     
     

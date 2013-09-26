@@ -95,6 +95,20 @@ public class EntidadBancaria {
         this.tipoEntidadBancaria = tipoEntidadBancaria;
     }
 
+    /**
+     * @return the entidades
+     */
+    public List<EntidadBancaria> getEntidades() {
+        return entidades;
+    }
+
+    /**
+     * @param entidades the entidades to set
+     */
+    public void setEntidades(List<EntidadBancaria> entidades) {
+        this.entidades = entidades;
+    }
+
     
     
 
