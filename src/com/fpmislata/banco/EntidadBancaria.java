@@ -7,17 +7,15 @@ public class EntidadBancaria {
     
 //Propiedades siempre privadas
     private String idEntidad;
-    private int codigoEntidad;
-    private int codigo;
-    private int cif;
+    private String codigoEntidad;
+    private String codigo;
+    private String cif;
     private TipoEntidadBancaria tipoEntidadBancaria;
  //lista de entidades bancarias
     private List<EntidadBancaria> entidades=new ArrayList();
-    
 
-    
-//Constructor
-    public EntidadBancaria(String idEntidad, int codigoEntidad, int codigo, int cif, TipoEntidadBancaria tipoEntidadBancaria) {
+    //Constructor
+    public EntidadBancaria(String idEntidad, String codigoEntidad, String codigo, String cif, TipoEntidadBancaria tipoEntidadBancaria) {
         this.idEntidad = idEntidad;
         this.codigoEntidad = codigoEntidad;
         this.codigo = codigo;
@@ -42,42 +40,42 @@ public class EntidadBancaria {
     /**
      * @return the codigoEntidad
      */
-    public int getCodigoEntidad() {
+    public String getCodigoEntidad() {
         return codigoEntidad;
     }
 
     /**
      * @param codigoEntidad the codigoEntidad to set
      */
-    public void setCodigoEntidad(int codigoEntidad) {
+    public void setCodigoEntidad(String codigoEntidad) {
         this.codigoEntidad = codigoEntidad;
     }
 
     /**
      * @return the codigo
      */
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
     /**
      * @param codigo the codigo to set
      */
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
     /**
      * @return the cif
      */
-    public int getCif() {
+    public String getCif() {
         return cif;
     }
 
     /**
      * @param cif the cif to set
      */
-    public void setCif(int cif) {
+    public void setCif(String cif) {
         this.cif = cif;
     }
 
@@ -108,9 +106,5 @@ public class EntidadBancaria {
     public void setEntidades(List<EntidadBancaria> entidades) {
         this.entidades = entidades;
     }
-
-    
-    
-
-    }
+}
 
