@@ -12,11 +12,8 @@ public static void main(String[] args){
                
     EntidadBancaria entidadBancaria1 = new EntidadBancaria("Banesto","1","1","1",TipoEntidadBancaria.Banco);
     EntidadBancaria entidadBancaria2 = new EntidadBancaria("Banesto","2","2","2",TipoEntidadBancaria.Banco);
+
     
-    for(EntidadBancaria entidadBancarias:entidadBancaria){
-    entidadBancaria1.getCodigo();
-    }
-  
     SucursalBancaria sucursalBancaria1 = new SucursalBancaria(5,entidadBancaria1,5,"Banesto");
     SucursalBancaria sucursalBancaria2 = new SucursalBancaria(10,entidadBancaria1,10,"Banesto");    
 
