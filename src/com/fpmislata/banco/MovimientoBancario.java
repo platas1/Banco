@@ -4,15 +4,15 @@ import java.util.Date;
 
 public class MovimientoBancario {
     
-    private int idMovimientoBancario;
+    private String idMovimientoBancario;
     private TipoMovimientoBancario tipoMovimientoBancario;
     private int importe;
-    private Date fecha;
+    private /*Date*/String fecha;
     private int saldoTotal;
     private String concepto;
 
     
-    public MovimientoBancario(int idMovimientoBancario, TipoMovimientoBancario tipoMovimientoBancario, int importe, Date fecha, int saldoTotal, String concepto) {
+    public MovimientoBancario(String idMovimientoBancario, TipoMovimientoBancario tipoMovimientoBancario, int importe, /*Date*/String fecha, int saldoTotal, String concepto) {
         this.idMovimientoBancario = idMovimientoBancario;
         this.tipoMovimientoBancario = tipoMovimientoBancario;
         this.importe = importe;
@@ -24,14 +24,14 @@ public class MovimientoBancario {
     /**
      * @return the idMovimientoBancario
      */
-    public int getIdMovimientoBancario() {
+    public String getIdMovimientoBancario() {
         return idMovimientoBancario;
     }
 
     /**
      * @param idMovimientoBancario the idMovimientoBancario to set
      */
-    public void setIdMovimientoBancario(int idMovimientoBancario) {
+    public void setIdMovimientoBancario(String idMovimientoBancario) {
         this.idMovimientoBancario = idMovimientoBancario;
     }
 
@@ -66,14 +66,14 @@ public class MovimientoBancario {
     /**
      * @return the fecha
      */
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
     /**
      * @param fecha the fecha to set
      */
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

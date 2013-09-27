@@ -12,7 +12,7 @@ public class SucursalBancaria {
     private int codigoSucursal;
     private String nombre;
 //Lista ArrayList con las sucursales   
-    private List<SucursalBancaria> sucursales=new ArrayList();
+    private List<CuentaBancaria> cuentaBancarias =new ArrayList();
 
     public SucursalBancaria(int idSucursalBancaria, EntidadBancaria entidadBancaria, int codigoSucursal, String nombre) {
         this.idSucursalBancaria = idSucursalBancaria;
@@ -78,19 +78,21 @@ public class SucursalBancaria {
     }
 
     /**
-     * @return the sucursales
+     * @return the cuentaBancarias
      */
-    public List<SucursalBancaria> getSucursales() {
-        return sucursales;
+    public List<CuentaBancaria> getCuentaBancarias() {
+        return cuentaBancarias;
     }
 
     /**
-     * @param sucursales the sucursales to set
+     * @param cuentaBancarias the cuentaBancarias to set
      */
-    public void setSucursales(List<SucursalBancaria> sucursales) {
-        this.sucursales = sucursales;
+    public void setCuentaBancarias(List<CuentaBancaria> cuentaBancarias) {
+        this.cuentaBancarias = cuentaBancarias;
     }
-    
+
+
+   
     
     
 }

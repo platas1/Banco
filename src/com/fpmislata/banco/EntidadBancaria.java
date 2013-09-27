@@ -12,7 +12,7 @@ public class EntidadBancaria {
     private String cif;
     private TipoEntidadBancaria tipoEntidadBancaria;
  //lista de entidades bancarias
-    private List<EntidadBancaria> entidades=new ArrayList();
+    private List<SucursalBancaria> sucursalBancarias=new ArrayList();
 
     //Constructor
     public EntidadBancaria(String idEntidad, String codigoEntidad, String codigo, String cif, TipoEntidadBancaria tipoEntidadBancaria) {
@@ -93,18 +93,6 @@ public class EntidadBancaria {
         this.tipoEntidadBancaria = tipoEntidadBancaria;
     }
 
-    /**
-     * @return the entidades
-     */
-    public List<EntidadBancaria> getEntidades() {
-        return entidades;
-    }
 
-    /**
-     * @param entidades the entidades to set
-     */
-    public void setEntidades(List<EntidadBancaria> entidades) {
-        this.entidades = entidades;
-    }
 }
 
