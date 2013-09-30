@@ -48,7 +48,7 @@ for(MovimientoBancario movimientoBancarios:cuentaBancaria.getMovimientoBancarios
           System.out.println(""+cuentaBancaria.getDc());
           System.out.println(""+cuentaBancaria.getSucursalBancaria());
           System.out.println(""+cuentaBancaria.getIdCuentaBancaria());
-
+          //Ojo al imprimir objetos sale churro !!!
 }
 
 }
