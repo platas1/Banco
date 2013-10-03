@@ -6,19 +6,20 @@ import java.util.List;
 public class EntidadBancaria {
     
 //Propiedades siempre privadas
-    private String idEntidad;
+    private Integer idEntidad;
     private String codigoEntidad;
-    private String codigo;
+    private String nombre;
+    //private String codigo;
     private String cif;
     private TipoEntidadBancaria tipoEntidadBancaria;
  //lista de entidades bancarias
     private List<SucursalBancaria> sucursalBancarias=new ArrayList();
 
     //Constructor
-    public EntidadBancaria(String idEntidad, String codigoEntidad, String codigo, String cif, TipoEntidadBancaria tipoEntidadBancaria) {
+    public EntidadBancaria(Integer idEntidad, String codigoEntidad, String nombre, String cif, TipoEntidadBancaria tipoEntidadBancaria) {
         this.idEntidad = idEntidad;
         this.codigoEntidad = codigoEntidad;
-        this.codigo = codigo;
+        this.nombre = nombre;
         this.cif = cif;
         this.tipoEntidadBancaria = tipoEntidadBancaria;
     }
@@ -26,14 +27,14 @@ public class EntidadBancaria {
     /**
      * @return the idEntidad
      */
-    public String getIdEntidad() {
+    public Integer getIdEntidad() {
         return idEntidad;
     }
 
     /**
      * @param idEntidad the idEntidad to set
      */
-    public void setIdEntidad(String idEntidad) {
+    public void setIdEntidad(Integer idEntidad) {
         this.idEntidad = idEntidad;
     }
 
@@ -55,14 +56,14 @@ public class EntidadBancaria {
      * @return the codigo
      */
     public String getCodigo() {
-        return codigo;
+        return getNombre();
     }
 
     /**
      * @param codigo the codigo to set
      */
     public void setCodigo(String codigo) {
-        this.codigo = codigo;
+        this.setNombre(codigo);
     }
 
     /**
@@ -93,6 +94,19 @@ public class EntidadBancaria {
         this.tipoEntidadBancaria = tipoEntidadBancaria;
     }
 
+     /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
 
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
 }
 

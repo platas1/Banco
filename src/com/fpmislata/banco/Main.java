@@ -1,17 +1,26 @@
 package com.fpmislata.banco;
 
 import java.math.BigDecimal;
+import java.sql.SQLException;
 import java.util.ArrayList;
 //import java.util.Date;
 import java.util.List;
 
 public class Main {
              
+   
     
-public static void main(String[] args){
-               
-    EntidadBancaria entidadBancaria1 = new EntidadBancaria("Banesto","1","1","1",TipoEntidadBancaria.Banco);
-    EntidadBancaria entidadBancaria2 = new EntidadBancaria("Banesto","2","2","2",TipoEntidadBancaria.Banco);
+public static void main(String[] args) throws Exception{
+       
+     Class.forName("com.mysql.jdbc.Driver");
+    
+   EntidadBancaria entidadBancariaIN = new EntidadBancaria(12,"3","CaixaBank","4444",TipoEntidadBancaria.Banco);
+       EntidadBancariaDAO entidadBancariaDAO = new EntidadBancariaDAO();
+        entidadBancariaDAO.insert(entidadBancariaIN);
+        
+    
+    EntidadBancaria entidadBancaria1 = new EntidadBancaria(1,"1","Banesto","1",TipoEntidadBancaria.Banco);
+    EntidadBancaria entidadBancaria2 = new EntidadBancaria(2,"2","Banesto","2",TipoEntidadBancaria.Banco);
 
     
     SucursalBancaria sucursalBancaria1 = new SucursalBancaria(5,entidadBancaria1,5,"Banesto");
