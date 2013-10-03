@@ -46,12 +46,25 @@ preparedStatement2.setString(5, entidadBancaria.getTipoEntidadBancaria().name())
 preparedStatement2 .executeUpdate();
 
 conexion.close(); 
-System.out.println("Conexion creada con exito");
+System.out.println("Conexion creada con exito y datos insertados.");
        
 }
     
-    void update(EntidadBancaria entidadBancaria){
+    void update(EntidadBancaria entidadBancaria) throws ClassNotFoundException, SQLException{
+        
+Class.forName("com.mysql.jdbc.Driver");
+Connection conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/banco","root","root");
+        
+
+String updateTableSQL = "UPDATE entidadbancaria SET nombre = ? WHERE identidad = ?";
+PreparedStatement preparedStatement = conexion.prepareStatement(updateTableSQL);
+preparedStatement.setString(1, "Santander");
+preparedStatement.setInt(2, entidadBancaria.getIdEntidad());
+// execute insert SQL stetement
+preparedStatement .executeUpdate();    
     
+conexion.close(); 
+System.out.println("Conexion creada con exito y datos actualizados.");
     }
     
     void delete(int entidadBancaria){
