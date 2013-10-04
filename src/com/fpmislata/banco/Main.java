@@ -23,7 +23,7 @@ public static void main(String[] args) throws Exception{
        entidadBancariaDAO.delete(entidadBancariaIN.getIdEntidad());
        
        //Faltan variables
-       entidadBancariaDAO.findAll();
+       System.out.println(""+entidadBancariaDAO.findAll());
        entidadBancariaDAO.findByCodigo(entidadBancariaIN.getCodigoEntidad());
         
     

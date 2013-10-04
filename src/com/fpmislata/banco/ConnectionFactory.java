@@ -1,13 +1,9 @@
 package com.fpmislata.banco;
 
-public abstract class ConnectionFactory {
+import java.sql.Connection;
+
+public interface ConnectionFactory {
     
- ConnectionFactory(){
- 
-    private void getConnection() {
-System.out.println("hola");
-    }
- 
+ Connection getConnection();
     
-}
 }
