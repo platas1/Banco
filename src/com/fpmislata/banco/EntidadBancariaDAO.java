@@ -44,6 +44,8 @@ if (rs.next()==true){
         throw new RuntimeException("No existe la entidad."+idEntidadBancaria);
     }
 
+conexion.close(); 
+System.out.println("Conexion creada con exito y datos mostrados.");
 return entidadBancaria;
 
     }          
@@ -128,6 +130,8 @@ while (rs.next()) {
 entidadBancaria = new EntidadBancaria(idEntidadBancaria,codigoEntidad,nombre,cif,TipoEntidadBancaria.valueOf(tipoEntidadBancaria));
  listaEntidades.add(entidadBancaria);
  
+ conexion.close(); 
+System.out.println("Conexion creada con exito y lista guardada.");
 }
 
  return listaEntidades; 
@@ -155,10 +159,12 @@ while (rs.next()) {
   
 entidadBancaria = new EntidadBancaria(idEntidadBancaria,codigoEntidad,nombre,cif,TipoEntidadBancaria.valueOf(tipoEntidadBancaria));
  listaEntidadesCodigo.add(entidadBancaria);
- 
-}
+ }
      
-     return listaEntidadesCodigo;
+conexion.close(); 
+System.out.println("Conexion creada con exito y lista de codigo creada.");
+
+return listaEntidadesCodigo;
  }
     
 }

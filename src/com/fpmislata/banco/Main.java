@@ -21,6 +21,10 @@ public static void main(String[] args) throws Exception{
        entidadBancariaDAO.insert(entidadBancariaIN);        
        entidadBancariaDAO.update(entidadBancariaIN);
        entidadBancariaDAO.delete(entidadBancariaIN.getIdEntidad());
+       
+       //Faltan variables
+       entidadBancariaDAO.findAll();
+       entidadBancariaDAO.findByCodigo(entidadBancariaIN.getCodigoEntidad());
         
     
     EntidadBancaria entidadBancaria1 = new EntidadBancaria(1,"1","Banesto","1",TipoEntidadBancaria.Banco);
