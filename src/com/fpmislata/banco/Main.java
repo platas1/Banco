@@ -17,8 +17,10 @@ public static void main(String[] args) throws Exception{
    EntidadBancaria entidadBancariaIN = new EntidadBancaria(12,"3","CaixaBank","4444",TipoEntidadBancaria.Banco);
        EntidadBancariaDAO entidadBancariaDAO = new EntidadBancariaDAO();
         
+       entidadBancariaDAO.read(entidadBancariaIN.getIdEntidad());
        entidadBancariaDAO.insert(entidadBancariaIN);        
        entidadBancariaDAO.update(entidadBancariaIN);
+       entidadBancariaDAO.delete(entidadBancariaIN.getIdEntidad());
         
     
     EntidadBancaria entidadBancaria1 = new EntidadBancaria(1,"1","Banesto","1",TipoEntidadBancaria.Banco);
